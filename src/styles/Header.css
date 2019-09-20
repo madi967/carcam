@@ -1,0 +1,180 @@
+.header{
+	background-image: url('../images/2.jpg'); 
+	background-size: 100%;
+	block-size: 100%;
+	height: 600px;
+	align-content: center;
+}
+.header >h1{
+	color: #FFF;
+	text-decoration-style: solid;
+	
+	font-family: Lora,'Abril Fatface';
+	font-size:50px;
+}
+.header >h3{
+	color: #FFF;
+	text-decoration-style: solid;
+	font-style: italic;
+	font-family: Lora;
+}
+.header > div{
+	display: inline-block;
+
+	justify-content: center;
+	background: #FFF;
+	border-radius: 30px;
+	padding-left:  15px;
+	font-size: 12px;
+	text-align: start;
+	width: 70%;
+}
+.logo {
+	display: inline-block;
+	background-color: #00F;
+	width: 50px;
+	height: 30px;
+	border-radius: 15px;
+	justify-content: center;
+	position: absolute;
+}
+.header > div>form>table{
+	width: 100%;
+}
+.header > div>form>table>tr{
+	display: flexbox;
+}
+.header > div>form>table>tr>td>button{
+	background-image: url('../images/recherche2.png');
+
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
+	align-self: center;
+}
+
+/*on utilise ">" pour ne cibler que la ste ul qui
+est un enfant direct de nav
+*/
+nav>ul{
+	margin: 0px;
+	padding: 0px;
+}
+/*
+on enleve les puces devant tous les élements li appartenat
+a notre élément nav
+*/
+nav>ul>li{
+	list-style-type: none;
+}
+/*
+on affiche seulement les elements li correspondant à nos onglets de menu en ligne
+(cote a cote)
+*/
+nav>ul>li{
+	float: left;
+}
+/*
+on cache les éléments du sous menus pour les afficher
+quand on survole le menu
+*/
+
+.menu-dcouv .submenucouv {
+	display: none;
+	list-style-type: none;
+	align-content: flex-start;
+	text-align: start;
+	max-width: 180%;
+	font-size: 12px;
+
+}
+
+
+/*dire au menu d'occuper toute la largeur disponible*/
+nav{
+	display: flex;
+	justify-content: end;
+	width: 100%;
+	background-color: #6600a1;
+}
+/*position relative a nos sous element*/
+nav>ul>li{
+	float: left;
+	position: relative;
+}
+/*un "hack* css (clearfix) très connu*/
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 12px;
+	text-decoration-style: solid;
+}
+/*on donne la couleur et la taille des sous element de type a*/
+nav > ul > li> a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+/*afficher les sous menu en dessous du menu quand on survole le menu
+*/
+/**
+pour avoir un alignement horizontal il faut que le submenu soit en position absolu et les elements
+du submenu en relative*/
+/***********************************submenucouverture***************************************/
+nav > ul> li:hover .submenucouv {
+	display: inline-block;
+	position: absolute;/*******************************/
+	top:100%;
+	left: 0px;
+	padding: 0px;
+}
+
+/**appliquer une bordure soft au sous element*/
+.submenucouv li{
+	border-bottom:1px solid #CCC;
+	display: inline-block;
+	width: 310px;
+	height: 40px;
+	background: #6600a1;
+}
+/*mise ne forme des sous menus*/
+
+
+/*mise en forme du menus quand on survole avec la souri*/
+.menu-home:hover{
+	border-top:5px solid #e44d26;
+	background-color: RGBa(228,77,38,0.15);
+}
+.menu-dcouv:hover{
+	border-top:5px solid #0070bb;
+	background-color: rgba(000,112,192,0.15);
+}
+.menu-dcap:hover{
+	border-top:5px solid #f1dc4f;
+	background-color: rgba(241,211,79,0.15);
+}
+.menu-res:hover{
+	border-top:5px solid #BBB;
+	background-color: rgba(220,220,220,0.15);
+}
+nav>ul>li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+/*mise en forme des sous menus*/
+.menu-dcouv .submenucouv{
+	background-color: #6600a1;
+}
+/****************************************les submenu couv et cap**********************************/
+.menu-dcouv .submenucouv li:hover a{
+	color:#EEE;
+	font-weight: bold;
+}
+/*****************************************************fin********************************************/
+.menu-dcouv .submenucouv li:hover{
+	background-color: #ff7f00;
+
+}

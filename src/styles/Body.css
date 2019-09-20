@@ -1,0 +1,252 @@
+body{/*parametre de body margin=marge interieure et pading=marge exterieure*/
+	font-family:Verdana, Calibri, san-serif;
+	margin: 0px;
+	padding: 0px; 
+}
+.info{
+    display: flexbox;
+
+}
+.info > div{
+    display: inline-block;
+    width: 40%;
+    justify-content: flex-start;
+    text-align:start;
+    margin: 30px;
+
+}
+span{
+    display: inline-block;
+    position: static;
+    align-self: center;
+    align-content: center;
+    background-color: forestgreen;
+    height: 30px;
+    font-size: 20px;
+    text-decoration: forestgreen;
+    width: 25%;
+    padding: 10px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+   
+}
+/*************************mise en forme categorie de voiture****************/
+.categorie{
+    height: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.categorie>div>a{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-width: 20px;
+    border-color: rgb(2, 1, 1);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow:black;
+    box-shadow: 15px;
+    position: relative;
+}
+.categorie>button
+{
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 250px;
+	border-radius: 40px;
+	
+}
+.next{
+    background-image: url('../images/next.png');	
+}
+.prev{
+    background-image: url('../images/prev.png');
+}
+.c1{
+    background-image: url('../images/categories/1.jpg');
+}
+.c2{
+    background-image: url('../images/categories/2.jpg');
+}
+.c3{
+    background-image: url('../images/categories/3.jpg');
+}
+.c4{
+    background-image: url('../images/categories/4.jpg');
+}
+.c5{
+    background-image: url('../images/categories/5.jpg');
+}
+.c6{
+    background-image: url('../images/categories/6.jpg');
+}
+.c7{
+    background-image: url('../images/categories/7.jpg');
+}
+.c8{
+    background-image: url('../images/categories/8.jpg');
+}
+.c9{
+    background-image: url('../images/categories/9.jpg');
+}
+/*******************************mise ne forme ville**********************/
+.categorie,.ville{
+    height: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.ville>div>a{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-width: 20px;
+    border-color: rgb(2, 1, 1);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow:black;
+    box-shadow: 15px;
+    position: relative;
+}
+.v1{
+    background-image: url('../images/categories/1.jpg');
+}
+.v2{
+    background-image: url('../images/categories/2.jpg');
+}
+.v3{
+    background-image: url('../images/categories/3.jpg');
+}
+.v4{
+    background-image: url('../images/categories/4.jpg');
+}
+.v5{
+    background-image: url('../images/categories/5.jpg');
+}
+/******************************mise en forme programme*************************/
+.programme{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+    
+    margin-bottom: 30px;
+    
+}
+.programme>div>img{
+    display: inline-block;
+    background-color: rgb(112, 110, 110);
+ 
+
+}
+.programme>div{
+    display: inline-block;
+    height: 400px;
+    width: 50%;
+    background-color:#fff;
+    
+    position: relative;
+   
+    align-self: inherit;
+
+}
+.programme>div>a{
+   
+   display: inline-block;
+    width: 210px;
+    height: 30px;
+    background-color:rgb(9, 236, 9);
+}
+.image1{
+    background-image: url('../images/1.jpg');
+    display: inline-block;
+    height: 400px;   
+}
+.image2{
+    display: inline-block;
+    background-image: url('../images/2.jpg');
+    height: 400px;
+    
+  
+}
+p{
+    color: black;
+    text-decoration-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.defilant{
+    background: rgb(20, 190, 20);
+    height: 30px;
+    padding: 15px;
+
+}
+.defilant>a {
+    color:#000;
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+    font-size:12px;
+    text-align: center;
+}
+.defilant>a :hover{
+    text-decoration: #fff;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    font-size: 13px;
+    text-size-adjust: 13px; 
+}
+/******************************mise en forme partage*************************/
+.partage{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+    
+    margin-bottom: 30px;
+    
+}
+.partage>div>img{
+    display: inline-block;
+    background-color: rgb(112, 110, 110);
+ 
+
+}
+.partage>div{
+    display: inline-block;
+    height: 400px;
+    width: 50%;
+    background-color:#fff;
+    
+    position: relative;
+   
+    align-self: inherit;
+
+}
+.partage>div>a{
+   
+   display: inline-block;
+    width: 210px;
+    height: 30px;
+    background-color:rgb(9, 236, 9);
+}
+.image1{
+    background-image: url('../images/1.jpg');
+    display: inline-block;
+    height: 400px;   
+}
+.image2{
+    display: inline-block;
+    background-image: url('../images/2.jpg');
+    height: 400px;
+    
+  
+}
+p{
+    color: black;
+    text-decoration-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
